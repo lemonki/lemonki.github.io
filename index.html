@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-README" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-fe-node/chapter3/README" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/11/29/README/" class="article-date">
-  <time datetime="2016-11-29T14:01:12.690Z" itemprop="datePublished">2016-11-29</time>
+    <a href="/2016/11/30/fe-node/chapter3/README/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.099Z" itemprop="datePublished">2016-11-30</time>
 </a>
     
   </div>
@@ -73,200 +73,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="学习资源："><a href="#学习资源：" class="headerlink" title="学习资源："></a>学习资源：</h3><pre><code>廖雪峰的官方网站
-git简明指南
-猴子都能懂得GIT入门
-菜鸟教程
-</code></pre><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
-<li>是一个类型与SVN的版本控制系统VCA（Version Control System）<ul>
-<li>GIT是分布式版本控制系统</li>
-<li>SVN是集中式版本控制系统</li>
-<li>相同点：都是版本控制系统<ul>
-<li>历史记录</li>
-<li>多人协作</li>
-</ul>
+        <h1 id="Javascript-笔记整理"><a href="#Javascript-笔记整理" class="headerlink" title="Javascript 笔记整理"></a>Javascript 笔记整理</h1><ol>
+<li><p>Javascript 基础知识</p>
 </li>
-</ul>
+<li><p>变量</p>
 </li>
-<li>2005年推出，最初为了更好地管理linux内核而生</li>
-<li>关于名字：Git：饭桶，无用的人<ul>
-<li>Angular：有角的，生硬的</li>
-</ul>
+<li><p>运算符</p>
 </li>
-<li>作者：林纳斯·脱瓦兹(Linus Torvalds)<ul>
-<li>Linux之父</li>
-</ul>
+<li><p>分支语句</p>
 </li>
-</ul>
-<h4 id="Git的诞生"><a href="#Git的诞生" class="headerlink" title="Git的诞生"></a>Git的诞生</h4><ul>
-<li>关于Git的作者：Linus Torvalds<ul>
-<li>创造了 Linux</li>
-<li>创造了开源世界</li>
-<li>Ubuntu Linux学习资源</li>
-</ul>
+<li><p>循环</p>
 </li>
-<li>2002年，Linus·Torvalds使用Bitkeeper作为Linus项目的版本控制系统软件</li>
-<li>Linus·Torvalds 2005年，短短几个星期之内就诞生了Git的最初版本</li>
-<li>真正的大规模被开发人员使用大概在2013年左右<ul>
-<li>2013年之前大部分都是SVN</li>
-<li>目前绝大多数，百分之70-80的公司都在使用Git作为自己的版本控制系统</li>
-</ul>
+<li><p>数组</p>
 </li>
-</ul>
-<h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><ul>
-<li>通过在命令太输入<code>git --version</code>查看是否有git环境</li>
-</ul>
-<h3 id="命令的分类"><a href="#命令的分类" class="headerlink" title="命令的分类"></a>命令的分类</h3><ul>
-<li><p>控制台自带命令</p>
-<ul>
-<li>工具型<ul>
-<li>ping</li>
-<li>config</li>
-<li>shutdown</li>
-<li>winver 查看Windows版本信息</li>
-<li>……</li>
-</ul>
+<li><p>函数</p>
 </li>
-<li>文件系统型<ul>
-<li>cd</li>
-<li>pwd</li>
-<li>ls</li>
-<li>mkdir</li>
-<li>cp</li>
-<li>……</li>
-</ul>
+<li><p>对象</p>
 </li>
-</ul>
-</li>
-<li><p>CLI(Command Line Interface)程序：命令行应用程序</p>
-<ul>
-<li>没有图形界面，直接在终端中运行，由第三方应用程序执行<ul>
-<li>接受用户通过终端输入的字符</li>
-<li>处理执行用户通过终端输入的字符</li>
-<li>终端会对你输入的相应的参数或者命令解析执行实现相应的功能</li>
-<li>如果有提示信息，直接将提示信息或者说操作信息，输出到终端</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>GUI程序：具有图形界面应用程序<ul>
-<li>feiq</li>
-</ul>
-</li>
-</ul>
-<h3 id="使用终端操作文件系统"><a href="#使用终端操作文件系统" class="headerlink" title="使用终端操作文件系统"></a>使用终端操作文件系统</h3><pre><code>`pwd`(print working direction): 打印文件目录。git bash和 powershell可用。
-`ls`(list files):列出当前目录下的所有文件。powershell and git bash可用
-    * ls可以指定参数
-    * ../：返回当前目录的上一级目录
-    * ./：当前目录
-    * ls -a: 打开文件目录并显示隐藏文件
-`cls`: 清屏 cmd and powershell可用
-`dir`: 显示当前目录下的所有文件。cmd and powershell可用
-`cd`: 切换工作目录。三个终端通用
-    + 在cmd或powershell中切盘符：`盘符：`回车即可
-`mv`: 移动文件目录
-`cp`: 复制目录。在复制时，不会复制子文件和子目录
-    * cp `原路径 目标路径`
-`exit`: 退出命令窗口
-`clear`: 清屏  git bash可用
-`mkdir`: 新建文件
-`rm`: 删文件或者目录
-    * rm -rf 目录名称：可以删除非空目录
-    * 在cmd、powershell不支持
-`rmdir`: 删目录。只能删除空目录
-上键：查看历史命令
-touch: 新建文件
-cat: 查看指定文本文件
-</code></pre><ul>
-<li>powershell: 加强版的cmd。windows XP 以后增加的功能</li>
-</ul>
-<h3 id="常用工具型命令"><a href="#常用工具型命令" class="headerlink" title="常用工具型命令"></a>常用工具型命令</h3><ul>
-<li>ping</li>
-<li>config</li>
-<li>shutdown: 定时关机操作</li>
-<li>date: 显示和设置日期</li>
-<li>time: 显示和设置时间</li>
-</ul>
-<h3 id="使用less命令浏览文件内容"><a href="#使用less命令浏览文件内容" class="headerlink" title="使用less命令浏览文件内容"></a>使用less命令浏览文件内容</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>行为</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>h</td>
-<td>显示帮助屏幕</td>
-</tr>
-<tr>
-<td>Page UP or b</td>
-<td>向上翻滚一页</td>
-</tr>
-<tr>
-<td>Page Down or space</td>
-<td>向下翻滚一页</td>
-</tr>
-<tr>
-<td>UP Arrow</td>
-<td>向上翻滚一行</td>
-</tr>
-<tr>
-<td>Down Arrow</td>
-<td>向下翻滚一行</td>
-</tr>
-<tr>
-<td>G</td>
-<td>移动到最后一行</td>
-</tr>
-<tr>
-<td>g</td>
-<td>移动到开头一行</td>
-</tr>
-<tr>
-<td>/charaters</td>
-<td>向前查看指定的字符串</td>
-</tr>
-<tr>
-<td>n</td>
-<td>向前查找下一个出现的字符串</td>
-</tr>
-<tr>
-<td>q</td>
-<td>退出less程序</td>
-</tr>
-</tbody>
-</table>
-<h3 id="命令行文本编辑器："><a href="#命令行文本编辑器：" class="headerlink" title="命令行文本编辑器："></a>命令行文本编辑器：</h3><p>VI(Visual Interface)可视化接口</p>
-<h4 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h4><ul>
-<li><code>wq</code>: 保存并退出</li>
-<li><code>:w</code>: 保存</li>
-<li><code>:q</code>：退出<ul>
-<li>如果没有保存会提示保存再退出</li>
-</ul>
-</li>
-<li><code>:q!</code>：强制退出</li>
-</ul>
-<h4 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h4><p>通过从命令模式按<code>i</code>进入编辑模式。<br>编辑模式切换到命令模式按<code>Esc</code></p>
-<p>学习shell最正确的方式就是学习Linux上的shell。<br>Linux上的shell或者说bash是最强大的。</p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><p>以后所有的项目文件，都使用 utf-8 编码。如果文件是GBK，使用git bash提交时，应该可以自动转码然后提交</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ `git init`  在本地当前项目初始化一个空的git仓库</div><div class="line">$ `git status`  当前版本管理状态：未被版本管理的，已修改的、已删除的等文件</div><div class="line">$ `git add`   将指定的文件添加到暂存区</div><div class="line">$ `git commit`</div><div class="line">    `git commit -m <span class="string">"提交日志"</span>`</div><div class="line">$ `git <span class="built_in">log</span>` ：查看提交日志</div><div class="line">$ `gitk`:  打开图形工具</div><div class="line">$ `git checkout &lt;file&gt;`   将暂存区的文件恢复到工作区</div><div class="line">$ `git checkout .`  将暂存区所有文件恢复到工作区</div><div class="line">$ `git checkout [commit版本号] [file]` 将本地仓库的文件恢复到暂存区和工作区</div><div class="line">$ `git diff`  比对文件变动差异</div><div class="line">$ `git pull`</div><div class="line">$ `git push`</div></pre></td></tr></table></figure>
-<h3 id="原理模型"><a href="#原理模型" class="headerlink" title="原理模型"></a>原理模型</h3><p><img src="img/git交互流程.png" alt="git交互流程"></p>
-<h3 id="工作区、暂存区、本地仓库"><a href="#工作区、暂存区、本地仓库" class="headerlink" title="工作区、暂存区、本地仓库"></a>工作区、暂存区、本地仓库</h3><ul>
-<li>暂存区起到两个作用：<ul>
-<li>可以分批次的进行提交<br>  假设你很长时间没有做过版本记录提交，例如你修复了某一个功能模块的Bug、开发了某个功能模块、修改了某些功能模块代码，这个时候就可以利用暂存区分批次的进行提交。</li>
-<li>可以作为一个临时版本存储<br>  例如可以讲暂存区指定文件恢复到工作区</li>
-</ul>
-</li>
-</ul>
-<p>本地仓库就是最终用来存储历史版本的地方，每一次commit都会醒成一个历史版本保存到本地仓库中</p>
-<hr>
-<h2 id="扩展内容"><a href="#扩展内容" class="headerlink" title="扩展内容"></a>扩展内容</h2><h3 id="PATH环境变量"><a href="#PATH环境变量" class="headerlink" title="PATH环境变量"></a>PATH环境变量</h3><p>为什么安装git的时候提示安装成功了，但是命令行中使用git命令不管用</p>
-<h3 id="sublime-插件"><a href="#sublime-插件" class="headerlink" title="sublime 插件"></a>sublime 插件</h3>
+</ol>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/29/README/" data-id="ciw3ko34w00014sv3nxw3w7o2" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/README/" data-id="ciw3pgsac000fdgv3j9wtsdxf" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -276,42 +105,504 @@ cat: 查看指定文本文件
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-fe-node/chapter3/7 函数" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/11/29/hello-world/" class="article-date">
-  <time datetime="2016-11-29T11:52:24.789Z" itemprop="datePublished">2016-11-29</time>
+    <a href="/2016/11/30/fe-node/chapter3/7 函数/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.099Z" itemprop="datePublished">2016-11-30</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
+    <div class="article-entry" itemprop="articleBody">
+      
         
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/7 函数/" data-id="ciw3pgs9h0005dgv3s51udubk" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/29/hello-world/">Hello World</a>
-    </h1>
-  
+</article>
 
-      </header>
+
+  
+    <article id="post-fe-node/chapter3/8 对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/8 对象/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.099Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/8 对象/" data-id="ciw3pgs9h0007dgv3vxhtpsjc" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/6 数组" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/6 数组/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/29/hello-world/" data-id="ciw3ko34p00004sv3mcthvh0o" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/6 数组/" data-id="ciw3pgsac000gdgv31fumangu" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/4 分支语句" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/4 分支语句/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h2><hr>
+<h3 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">if (表达式) &#123;</div><div class="line">    // 条件为真执行的代码</div><div class="line">&#125; else &#123;</div><div class="line">    // 条件为假执行的代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>`if else` 语句可扩展为` if(){ } else if(){ }else if(){} … else{};`</p>
+</li>
+</ul>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><ul>
+<li><p>语法：</p>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">switch</span> (变量) &#123;</div><div class="line">    <span class="keyword">case</span> value1：</div><div class="line">        代码<span class="number">1</span>；</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> value2:</div><div class="line">        代码<span class="number">2</span>；</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    ......</div><div class="line">    default:</div><div class="line">        代码;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行顺序：变量满足哪个case的值就执行对应的代码。如果没有就执行default。执行完毕break</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/4 分支语句/" data-id="ciw3pgsac000edgv34kvbvz51" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/2 变量" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/2 变量/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><hr>
+<h3 id="变量的作用"><a href="#变量的作用" class="headerlink" title="变量的作用"></a>变量的作用</h3><ul>
+<li><p>变量是用来保存数据的一个标识符</p>
+</li>
+<li><p>变量的存储位置</p>
+<ul>
+<li>基本类型：保存在栈中</li>
+<li>引用类型：引用类型的地址保存在栈中，值保存在堆中</li>
+</ul>
+</li>
+<li><p>变量的声明</p>
+<ul>
+<li>正常的声明：var name = value;    var name1, name2, name3;</li>
+<li>不正常的声明：name = value;   var a=b=c=10;</li>
+</ul>
+</li>
+<li><p>变量命名规则</p>
+<ul>
+<li>以字母、下划线和$ 开头</li>
+<li>可以使用汉字，但是非常不推荐</li>
+<li>不能使用关键字和保留字</li>
+<li>严格区分大小写</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h4><ul>
+<li><p>string 字符串：以引号包括起来的都是字符串类型</p>
+</li>
+<li><p>number 数字：整数，小数</p>
+</li>
+<li><p>boolean 布尔：只有两个值，true 和 false</p>
+</li>
+<li><p>undefined 未定义：值是undefined, 类型也是undefined</p>
+</li>
+<li><p>null ：null可以当作基本类型，也可以当作引用类型。值本身是一个基本类型，但是通常用来表示引用类型的无效返回值</p>
+</li>
+</ul>
+<h4 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h4><ul>
+<li><p>Object</p>
+</li>
+<li><p>Function</p>
+</li>
+<li><p>Array</p>
+</li>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Math</li>
+</ul>
+<h4 id="typeof-关键字"><a href="#typeof-关键字" class="headerlink" title="typeof 关键字"></a>typeof 关键字</h4><p>用来查看变量的数据类型。可以查看基本类型和函数的类型，其他引用类型返回的结果都是‘function’，不准确。</p>
+<p>返回值：字符串</p>
+<p>用法：typeof 变量名   |    typeof(变量名)</p>
+<h4 id="引用类型判断方式"><a href="#引用类型判断方式" class="headerlink" title="引用类型判断方式"></a>引用类型判断方式</h4><ul>
+<li><p>Object.prototype.toString.call();</p>
+</li>
+<li><p>变量 instanceof 类型</p>
+</li>
+<li><p>变量.isArray()</p>
+</li>
+</ul>
+<h4 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h4><h5 id="转换为-number-类型"><a href="#转换为-number-类型" class="headerlink" title="转换为 *number*类型"></a>转换为 *number*类型</h5><ul>
+<li><p>强制转换</p>
+<ul>
+<li>Number();  可以将纯字符串转换为number</li>
+<li>parseInt();   将字符串数字部分的整数部分保留。必须以数字开头的字符串</li>
+<li>parseFloat();  可以保留整数及小数位。同样必须以数字开头</li>
+<li>注意：如果不是合法的字符串，会返回NaN</li>
+</ul>
+</li>
+<li><p>隐式转换</p>
+<ul>
+<li>通过减、乘、除、取余运算在不改变结果值得前提下进行隐士转换</li>
+<li>例如：var a = ‘123’;  a = a - 0;</li>
+</ul>
+</li>
+</ul>
+<h5 id="转换为-string-类型"><a href="#转换为-string-类型" class="headerlink" title="转换为 *string*类型"></a>转换为 *string*类型</h5><ul>
+<li><p>强制转换</p>
+<ul>
+<li>String();   通用方法。内部也是调用 toString() 方法实现的</li>
+<li>变量名.toStirng();   null和undefined没有toString方法。</li>
+</ul>
+</li>
+<li><p>隐式转换</p>
+<ul>
+<li>任意类型+空字符串。这样可以在不影响结果值得前提下将其转换成string类型</li>
+</ul>
+</li>
+</ul>
+<h5 id="转换成-boolean-类型"><a href="#转换成-boolean-类型" class="headerlink" title="转换成*boolean*类型"></a>转换成*boolean*类型</h5><ul>
+<li><p>强制转换</p>
+<ul>
+<li>Boolean();   将任意类型转换后返回 true 或 false</li>
+</ul>
+</li>
+<li><p>隐式转换</p>
+<ul>
+<li>!!  </li>
+<li>第一个逻辑非操作会基于无论什么操作数返回一个布尔值,第二个逻辑非操作则对该布尔值求反</li>
+</ul>
+</li>
+</ul>
+<h4 id="基本类型和引用类型的区别"><a href="#基本类型和引用类型的区别" class="headerlink" title="基本类型和引用类型的区别"></a>基本类型和引用类型的区别</h4><ul>
+<li><p>存储位置和保存方式不同</p>
+</li>
+<li><p>复制方式不同</p>
+<ul>
+<li>基本类型复制：直接将值复制给新的变量</li>
+<li>引用类型复制：复制指针给新的变量，两个指针指向同一个堆中的内容</li>
+</ul>
+</li>
+</ul>
+<h4 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h4><ul>
+<li><p>全局作用域：在script标签内部，函数外部。全局变量都可以被访问，包括函数内部</p>
+</li>
+<li><p>局部作用域：函数内部。局部变量只能在其函数内部使用，如果外部想访问，只能有函数的return将其返回。</p>
+</li>
+<li>注意：Javascript中，只要函数可以分割作用域，也就是只有声明在函数内部的变量才是局部变量</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/2 变量/" data-id="ciw3pgsac000ddgv3pl7jw8pt" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/5 循环" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/5 循环/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><hr>
+<h3 id="1-for"><a href="#1-for" class="headerlink" title="1 for"></a>1 for</h3><ul>
+<li><p>语法：</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for (变量初始化; 表达式; 变量自增或自减) &#123;</div><div class="line">    // 循环代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行顺序：</p>
+<ol>
+<li>初始化变量</li>
+<li>进行条件判断</li>
+<li>自增或自减</li>
+<li>条件为真时继续执行代码</li>
+<li>从第二步循环执行</li>
+<li>直到条件不满足时结束循环</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-while"><a href="#2-while" class="headerlink" title="2 while"></a>2 while</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 变量初始化</span></div><div class="line"><span class="keyword">while</span> (条件判断) &#123;</div><div class="line">    <span class="comment">// 循环代码</span></div><div class="line">    <span class="comment">// 变量自增或自减</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行顺序：</p>
+<ul>
+<li>和 for 循环执行顺序相似</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-do-while"><a href="#3-do-while" class="headerlink" title="3 do while"></a>3 do while</h3><ul>
+<li><p>语法：</p>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 变量初始化</span></div><div class="line"><span class="keyword">do</span> &#123;</div><div class="line">    <span class="comment">// 循环代码</span></div><div class="line">    <span class="comment">// 自增或自减</span></div><div class="line">&#125; <span class="keyword">while</span> (条件判断);</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行顺序：</p>
+<ol>
+<li>变量初始化</li>
+<li>执行循环代码</li>
+<li>自增或自减</li>
+<li>条件判断</li>
+<li>为假时结束循环，为真时继续执行第二步</li>
+</ol>
+</li>
+<li><p>特点：因为是先进入循环，在进行条件判断，所以会至少执行一次。</p>
+</li>
+</ul>
+<h3 id="循环总结"><a href="#循环总结" class="headerlink" title="循环总结"></a>循环总结</h3><p>for循环使用有规律有次数的执行某段代码。  </p>
+<p>while和do while循环适合当次数不定时执行某段代码。</p>
+<h4 id="for-循环扩展代码示例"><a href="#for-循环扩展代码示例" class="headerlink" title="for 循环扩展代码示例"></a>for 循环扩展代码示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getChildren</span>(<span class="params">parent</span>)&#125;</span>&#123;</div><div class="line">    <span class="keyword">var</span> ret = [], </div><div class="line">        ele = parent.firstChild;</div><div class="line">    <span class="keyword">for</span> ( ; ele; ele = ele.nextSibling) &#123;</div><div class="line">        <span class="keyword">if</span>(ele.nodeType == <span class="number">1</span>)&#123;</div><div class="line">            ret.push(ele);</div><div class="line">        &#125;    </div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ret;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上for循环的写法可以模仿while的特点。</p>
+<h3 id="break-和-continue-关键字"><a href="#break-和-continue-关键字" class="headerlink" title="break 和 continue 关键字"></a>break 和 continue 关键字</h3><ul>
+<li><p>break：直接跳出循环，执行循环后的代码</p>
+</li>
+<li><p>continue：结束本次循环，继续执行下次循环</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/5 循环/" data-id="ciw3pgs9x000cdgv3ag77m1z8" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter2/README" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter2/README/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS-笔记整理"><a href="#CSS-笔记整理" class="headerlink" title="CSS 笔记整理"></a>CSS 笔记整理</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter2/README/" data-id="ciw3pgs9x0009dgv3myhj0c93" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/1 Javascript基础知识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/1 Javascript基础知识/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Javascript-基础知识"><a href="#Javascript-基础知识" class="headerlink" title="Javascript 基础知识"></a>Javascript 基础知识</h1><hr>
+<ul>
+<li><p>什么是Javascript?</p>
+<ul>
+<li>Javascript 是一种运行时边解析边执行的客户端脚本语言。</li>
+<li>Javascript 是弱类型语言。比如一个变量初始化值是number类型，可以改成string类型。不推荐这样做。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>为什么要有Javascript？</p>
+<ul>
+<li>最初目的：判断和验证表单</li>
+<li>现在的意义：特效、移动端、异步和服务器交互、服务器开发(nodejs)</li>
+</ul>
+</li>
+<li><p>组成</p>
+<ul>
+<li>ECMAScript: Javascript的语法标准</li>
+<li>DOM：操作网页上元素的API</li>
+<li>BOM：操作浏览器上元素的API</li>
+</ul>
+</li>
+<li><p>Javascript 引用方式</p>
+<ul>
+<li>内嵌式：可以写在HTML文档的任意部位。推荐写在body或head标签下</li>
+<li>外联式：通过script标签的src属性引用。`&lt;script src=”test.js”&gt;&lt;\/script&gt;`</li>
+<li>注意：写在引用js文件的script标签内的代码不会执行</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/1 Javascript基础知识/" data-id="ciw3pgs9x000adgv3h00uahtw" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fe-node/chapter3/3 运算符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/30/fe-node/chapter3/3 运算符/" class="article-date">
+  <time datetime="2016-11-29T16:15:15.084Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><hr>
+<ul>
+<li><p>算数运算符 + - * \/ %</p>
+</li>
+<li><p>一元运算符 ++ –</p>
+<ul>
+<li>运算符前置：先自增或自减再参与运算</li>
+<li>运算符后置：先参与运算在自增或自减</li>
+</ul>
+</li>
+<li><p>逻辑运算符 &amp;&amp; || !</p>
+<ul>
+<li>&amp;&amp; ： 两个条件都为true是才为true</li>
+<li>|| ： 只要有一个为true就是true</li>
+<li>! ：取反</li>
+</ul>
+</li>
+<li><p>比较运算符  &gt; &lt; &gt;= &lt;=</p>
+</li>
+<li><p>赋值运算符 = += -= *= \/=</p>
+</li>
+<li><p>相等运算符</p>
+<ul>
+<li>==  !=  只判断值是否相等或不等。比较时会先进行隐式转换</li>
+<li>===   !==  同时判断类型和值是否相等或不等</li>
+</ul>
+</li>
+<li><p>三元(三目)运算符</p>
+<ul>
+<li>语法：布尔表达式  ？为真时执行此代码  ：为假时执行此代码</li>
+<li>作用：为了替代简单的if else</li>
+<li>3个数的运算<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">10</span>, b = <span class="number">12</span>, c = <span class="number">5</span>;</div><div class="line">(a &gt; b ? a : b) &gt; c ? (a &gt; b ? a : b) : c;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h3><ul>
+<li><p>优先级从高到底</p>
+</li>
+<li><p>() 优先级最高</p>
+</li>
+<li><p>一元运算符 ++ – !</p>
+</li>
+<li><p>算数运算符 先* \/ % 后 + -</p>
+</li>
+<li><p>关系运算符 &gt; &gt;= &lt; &lt;=</p>
+</li>
+<li><p>相等运算符 == != === !==</p>
+</li>
+<li><p>逻辑运算符 先&amp;&amp; 后||</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/30/fe-node/chapter3/3 运算符/" data-id="ciw3pgs9x000bdgv3hu9kaod4" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -322,6 +613,10 @@ cat: 查看指定文本文件
 
   
 
+
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -351,11 +646,23 @@ cat: 查看指定文本文件
       <ul>
         
           <li>
-            <a href="/2016/11/29/README/">(no title)</a>
+            <a href="/2016/11/30/fe-node/chapter3/README/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2016/11/29/hello-world/">Hello World</a>
+            <a href="/2016/11/30/fe-node/chapter3/7 函数/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/30/fe-node/chapter3/8 对象/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/30/fe-node/chapter3/6 数组/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/30/fe-node/chapter3/4 分支语句/">(no title)</a>
           </li>
         
       </ul>
